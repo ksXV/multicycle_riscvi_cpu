@@ -1,0 +1,67 @@
+# ============================================================
+# .rules.verible_lint
+# Strict config aligned with Verilator -Wall
+# ============================================================
+
+# --- RTL Correctness -------------------------------------------
+
++always-comb
++always-comb-blocking
++always-ff-non-blocking
++forbid-defparam
++invalid-system-task-function
++plusarg-assignment
++suspicious-semicolon
++forbid-consecutive-null-statements
++truncated-numeric-literal
++undersized-binary-literal
++module-begin-block
++packed-dimensions-range-ordering
++unpacked-dimensions-range-ordering
++case-missing-default
++instance-shadowing
++forbid-line-continuations
++void-cast
++suggest-parentheses
++disable-statement
++legacy-generate-region
++legacy-genvar-declaration
++generate-label
++generate-label-prefix
+
+# --- Type Safety -----------------------------------------------
+
++typedef-enums
++typedef-structs-unions
++explicit-parameter-storage-type
++explicit-function-task-parameter-type
++explicit-function-lifetime
++explicit-task-lifetime
++proper-parameter-declaration
+
+# --- Naming Conventions ----------------------------------------
+
++parameter-name-style=localparam_style:ALL_CAPS;parameter_style:ALL_CAPS
++interface-name-style=suffix:_if
++port-name-suffix
++banned-declared-name-patterns=patterns:reg|wire
++enum-name-style
++struct-union-name-style
++macro-name-style
++constraint-name-style
++positive-meaning-parameter-name
+
+# --- Structural / Formatting -----------------------------------
+
++no-trailing-spaces
++no-tabs
++line-length=length:120
++endif-comment
++explicit-begin
++one-module-per-file
++module-filename
++package-filename
++module-port
++module-parameter
++posix-eof
++v2001-generate-begin

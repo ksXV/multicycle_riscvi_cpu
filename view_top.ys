@@ -1,0 +1,26 @@
+plugin -i slang
+
+# read SystemVerilog sources
+read_slang rtl/utility/types_pkg.v rtl/top.v rtl/memory/*.v rtl/cpu/*.v
+
+hierarchy -check -top top
+show -format svg -viewer none -nobg -prefix visualize/view_1_hier -stretch -width top
+
+# Stage 1: unroll always blocks into muxes/registers
+proc; opt
+show -format svg -viewer none -nobg -prefix visualize/view_2_proc -stretch -width top
+
+# Stage 2: extract FSMs explicitly
+fsm; opt
+show -format svg -viewer none -nobg -prefix visualize/view_3_fsm -stretch -width top
+
+# Stage 3: infer memories ($mem_v2 macro blocks)
+memory; opt
+
+# Stage 4: map everything down to real logic gates
+techmap; opt
+abc               # no -liberty maps to Yosys' internal generic gates ($_AND_, $_OR_, $_NOT_, $_DFF_...)
+opt_clean
+
+# dump a text netlist too
+write_verilog -noattr gate_level.v
