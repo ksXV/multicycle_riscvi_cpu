@@ -1,6 +1,0 @@
-/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Vregister.dir
-/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir
-/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Vtop.dir
-/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/test.dir
-/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/edit_cache.dir
-/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/rebuild_cache.dir

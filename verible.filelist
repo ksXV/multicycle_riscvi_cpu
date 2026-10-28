@@ -1,8 +1,0 @@
-./rtl/cpu/alu.v
-./rtl/cpu/control_unit.v
-./rtl/cpu/register_file.v
-./rtl/cpu/register.v
-./rtl/memory/data_memory.v
-./rtl/memory/instruction_memory.v
-./rtl/top.v
-./rtl/utility/opcodes_pkg.v

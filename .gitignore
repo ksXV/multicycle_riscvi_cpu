@@ -1,6 +1,8 @@
 .vscode
 .cache
-.build
-visualize
+build/
+trace/
+visualize/
 
 *.mem
+skills/

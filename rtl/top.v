@@ -210,7 +210,6 @@ module top #(
     control_unit cu(
         .clk_i(clk_i),
         .reset_i(rst_n_i),
-        .function_3_i(instr.r.funct3),
         .opcode_i(instr.r.opcode),
         .select_imm_alu_o(select_imm_alu),
         .register_write_enable_o(register_write_enable),
@@ -218,6 +217,21 @@ module top #(
         .memory_read_enable_o(memory_read_enable),
         .memory_write_enable_o(memory_write_enable),
         .fetch_next_instruction_o(fetch_next_instruction)
+    );
+
+    logic halt_decode_stage;
+
+    hazard_unit #(
+    	.REGISTER_ADDR_WIDTH(5),
+        .OPCODE_WIDTH(7)
+     ) hazard_unit (
+    	.clk_i              (clk_i),
+    	.rst_n_i            (rst_n_i),
+        .opcode_i           (instr.r.opcode),
+    	.reg_src_1_d_i      (instr.r.rs1),
+    	.reg_src_2_d_i      (instr.r.rs2),
+    	.reg_dst_exec_i     (instr.r.rd),
+    	.halt_decode_stage_o(halt_decode_stage)
     );
 
 endmodule
