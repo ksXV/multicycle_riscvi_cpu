@@ -1,0 +1,1 @@
+/usr/bin/cmake;-E;env;VERILATOR_ROOT=/usr/share/verilator;/usr/share/verilator/bin/verilator_bin;--compiler;gcc;--prefix;Valu;--Mdir;/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir;--make;json;--cc;-y;rtl/;-y;rtl/cpu/;--trace;-sv;--timing;rtl/cpu/alu.v;rtl/utility/types_pkg.v

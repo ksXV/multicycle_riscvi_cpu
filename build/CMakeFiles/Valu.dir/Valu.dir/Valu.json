@@ -1,0 +1,61 @@
+{
+    "version": 1,
+    "system": {
+        "perl": "perl",
+        "python3": "python3",
+        "verilator_root": "/usr/share/verilator",
+        "verilator_solver": ""
+    },
+    "options": {
+        "system_c": false,
+        "coverage": false,
+        "use_timing": false,
+        "threads": 1,
+        "trace": true,
+        "trace_fst": false,
+        "trace_saif": false,
+        "trace_vcd": true
+    },
+    "sources": {
+        "global": [
+            "/usr/share/verilator/include/verilated.cpp",
+            "/usr/share/verilator/include/verilated_vcd_c.cpp",
+            "/usr/share/verilator/include/verilated_threads.cpp"
+        ],
+        "classes_slow": [
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu___024root__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu___024root__0__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu___024unit__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu___024unit__0__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu_types_pkg__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu_types_pkg__0__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu_types_pkg__03a__03afunctions_3__Vclpkg__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu_types_pkg__03a__03afunctions_3__Vclpkg__0__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu_types_pkg__03a__03aalu_ops__Vclpkg__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu_types_pkg__03a__03aalu_ops__Vclpkg__0__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu_types_pkg__03a__03ainstruction_type__Vclpkg__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu_types_pkg__03a__03ainstruction_type__Vclpkg__0__Slow.cpp"
+        ],
+        "classes_fast": [
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu___024root__0.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu_types_pkg__03a__03afunctions_3__Vclpkg__0.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu_types_pkg__03a__03aalu_ops__Vclpkg__0.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu_types_pkg__03a__03ainstruction_type__Vclpkg__0.cpp"
+        ],
+        "support_slow": [
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu__Syms__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu__Trace__0__Slow.cpp",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu__TraceDecls__0__Slow.cpp"
+        ],
+        "support_fast": [
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/CMakeFiles/Valu.dir/Valu.dir/Valu__Trace__0.cpp"
+        ],
+        "deps": [
+            "/usr/share/verilator/include/verilated_std.sv",
+            "/usr/share/verilator/include/verilated_std_waiver.vlt",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/rtl/cpu/alu.v",
+            "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/rtl/utility/types_pkg.v"
+        ]
+    }
+}

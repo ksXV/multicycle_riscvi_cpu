@@ -1,0 +1,5 @@
+register_test 1 0.00324064
+alu_test 1 0.00320992
+top_test 0 0
+---
+top_test

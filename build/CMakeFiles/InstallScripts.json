@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,211 @@
+Start testing: Oct 28 23:41 EET
+----------------------------------------------------------
+1/3 Testing: register_test
+1/3 Test: register_test
+Command: "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/Vregister"
+Directory: /home/ksxv/personal/verilog/multicycle_riscvi_cpu/build
+"register_test" start time: Oct 28 23:41 EET
+Output:
+----------------------------------------------------------
+Checking after reset (may be undefined)
+Output: 0x0
+[OK] Wanted: 0xdead Got: 0xdead
+Simulation finished
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"register_test" end time: Oct 28 23:41 EET
+"register_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: alu_test
+2/3 Test: alu_test
+Command: "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/Valu"
+Directory: /home/ksxv/personal/verilog/multicycle_riscvi_cpu/build
+"alu_test" start time: Oct 28 23:41 EET
+Output:
+----------------------------------------------------------
+[OK] Expecting: 0 Got: 0
+operand_1: 0x5 operand_2: 0x3
+Running ADD
+[OK] Expecting: 8 Got: 8
+operand_1: 0xffffffff operand_2: 0x1
+Running ADD
+[OK] Expecting: 0 Got: 0
+operand_1: 0x7fffffff operand_2: 0x1
+Running ADD
+[OK] Expecting: -2147483648 Got: -2147483648
+operand_1: 0x80000000 operand_2: 0x80000000
+Running ADD
+[OK] Expecting: 0 Got: 0
+operand_1: 0x5 operand_2: 0x3
+Running SUB
+[OK] Expecting: 2 Got: 2
+operand_1: 0x3 operand_2: 0x5
+Running SUB
+[OK] Expecting: -2 Got: -2
+operand_1: 0x0 operand_2: 0x1
+Running SUB
+[OK] Expecting: -1 Got: -1
+operand_1: 0x80000000 operand_2: 0x1
+Running SUB
+[OK] Expecting: 2147483647 Got: 2147483647
+operand_1: 0xf0f0f0f0 operand_2: 0xff00ff0
+Running AND
+[OK] Expecting: 15728880 Got: 15728880
+operand_1: 0xffffffff operand_2: 0x0
+Running AND
+[OK] Expecting: 0 Got: 0
+operand_1: 0x12345678 operand_2: 0xffffffff
+Running AND
+[OK] Expecting: 305419896 Got: 305419896
+operand_1: 0xf0f0f0f0 operand_2: 0xff00ff0
+Running OR
+[OK] Expecting: -983056 Got: -983056
+operand_1: 0x0 operand_2: 0x0
+Running OR
+[OK] Expecting: 0 Got: 0
+operand_1: 0x12340000 operand_2: 0x5678
+Running OR
+[OK] Expecting: 305419896 Got: 305419896
+operand_1: 0xaaaaaaaa operand_2: 0x55555555
+Running XOR
+[OK] Expecting: -1 Got: -1
+operand_1: 0xffffffff operand_2: 0xffffffff
+Running XOR
+[OK] Expecting: 0 Got: 0
+operand_1: 0x12345678 operand_2: 0xffffffff
+Running XOR
+[OK] Expecting: -305419897 Got: -305419897
+operand_1: 0x1 operand_2: 0x1
+Running SLL
+[OK] Expecting: 2 Got: 2
+operand_1: 0x1 operand_2: 0x1f
+Running SLL
+[OK] Expecting: -2147483648 Got: -2147483648
+operand_1: 0x5 operand_2: 0x3
+Running SLL
+[OK] Expecting: 40 Got: 40
+operand_1: 0x1 operand_2: 0x20
+Running SLL
+[OK] Expecting: 1 Got: 1
+operand_1: 0x80000000 operand_2: 0x1
+Running SRL
+[OK] Expecting: 1073741824 Got: 1073741824
+operand_1: 0xffffffff operand_2: 0x4
+Running SRL
+[OK] Expecting: 268435455 Got: 268435455
+operand_1: 0x7fffffff operand_2: 0x1
+Running SRL
+[OK] Expecting: 1073741823 Got: 1073741823
+operand_1: 0x80000000 operand_2: 0x1
+Running SRA
+[OK] Expecting: -1073741824 Got: -1073741824
+operand_1: 0xffffffff operand_2: 0x4
+Running SRA
+[OK] Expecting: -1 Got: -1
+operand_1: 0x7fffffff operand_2: 0x1
+Running SRA
+[OK] Expecting: 1073741823 Got: 1073741823
+operand_1: 0x5 operand_2: 0xa
+Running SLT
+[OK] Expecting: 1 Got: 1
+operand_1: 0xa operand_2: 0x5
+Running SLT
+[OK] Expecting: 0 Got: 0
+operand_1: 0xffffffff operand_2: 0x1
+Running SLT
+[OK] Expecting: 1 Got: 1
+operand_1: 0x80000000 operand_2: 0x0
+Running SLT
+[OK] Expecting: 1 Got: 1
+operand_1: 0x7fffffff operand_2: 0xffffffff
+Running SLT
+[OK] Expecting: 0 Got: 0
+operand_1: 0x5 operand_2: 0xa
+Running SLTU
+[OK] Expecting: 1 Got: 1
+operand_1: 0xa operand_2: 0x5
+Running SLTU
+[OK] Expecting: 0 Got: 0
+operand_1: 0xffffffff operand_2: 0x0
+Running SLTU
+[OK] Expecting: 0 Got: 0
+operand_1: 0x0 operand_2: 0xffffffff
+Running SLTU
+[OK] Expecting: 1 Got: 1
+operand_1: 0x0 operand_2: 0x0
+Running ADD
+[OK] Expecting: 0 Got: 0
+operand_1: 0x1e240 operand_2: 0x1e240
+Running SUB
+[OK] Expecting: 0 Got: 0
+operand_1: 0xdeadbeef operand_2: 0xdeadbeef
+Running XOR
+[OK] Expecting: 0 Got: 0
+
+--- Results: 39 passed, 0 failed ---
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"alu_test" end time: Oct 28 23:41 EET
+"alu_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: top_test
+3/3 Test: top_test
+Command: "/home/ksxv/personal/verilog/multicycle_riscvi_cpu/build/Vtop"
+Directory: /home/ksxv/personal/verilog/multicycle_riscvi_cpu/build
+"top_test" start time: Oct 28 23:41 EET
+Output:
+----------------------------------------------------------
+%Warning: ./build/instructions.mem:0: $readmem file not found
+[TIMEOUT] Execution step 0 failed.
+[FATAL] Program execution timed out!
+
+================ Running Test Verification ================
+[ERROR] ADDI x1, x0, 42 | mem[0] expected=0x2a got=0x0
+[ERROR] ADD x3 = x1(10) + x2(20) | mem[1] expected=0x1e got=0x0
+[ERROR] SUB x3 = x1(50) - x2(20) | mem[2] expected=0x1e got=0x0
+[ERROR] AND x3 = 0xFF & 0x0F | mem[3] expected=0xf got=0x0
+[ERROR] OR x3 = 0xF0 | 0x0F | mem[4] expected=0xff got=0x0
+[ERROR] XOR x3 = 0xFF ^ 0x0F | mem[5] expected=0xf0 got=0x0
+[ERROR] SLL x3 = 1 << 4 | mem[6] expected=0x10 got=0x0
+[ERROR] SLT 5 < 10 = 1 | mem[7] expected=0x1 got=0x0
+[OK] SLT 10 < 5 = 0 | mem[8] expected=0x0 got=0x0
+[ERROR] ANDI x2 = x1(0xFF) & imm(0x0F) | mem[9] expected=0xf got=0x0
+[ERROR] ORI x2 = x1(0xF0) | imm(0x0F) | mem[10] expected=0xff got=0x0
+[OK] XORI x2 = x1(0xFF) ^ imm(0xFF) | mem[11] expected=0x0 got=0x0
+[ERROR] SLLI x2 = x1(1) << 8 | mem[12] expected=0x100 got=0x0
+[ERROR] Chained: ((3+7)+5)-3 = 12 | mem[13] expected=0xc got=0x0
+[OK] x0 hardwired to zero | mem[14] expected=0x0 got=0x0
+[ERROR] SW: store word 0x7F to mem[50] | mem[50] expected=0x7f got=0x0
+[ERROR] SB: store byte, top bits stripped to mem[51] | mem[51] expected=0xff got=0x0
+[ERROR] SH: store halfword 0x0BEF to mem[52] | mem[52] expected=0xbef got=0x0
+[ERROR] LW: store 0x234, load, store to mem[53] | mem[53] expected=0x234 got=0x0
+[ERROR] LB: load byte 0xAB and store to mem[54] | mem[54] expected=0xab got=0x0
+[ERROR] SW: overwrite mem[55] | mem[55] expected=0x22 got=0x0
+[OK] SW x0: storing x0 writes zero to mem[56] | mem[56] expected=0x0 got=0x0
+[ERROR] LH: load halfword 0x0BEF and store to mem[57] | mem[57] expected=0xbef got=0x0
+[ERROR] SW: store built value 0xCAFE to mem[58] | mem[58] expected=0xcafe got=0x0
+[ERROR] BEQ taken (forward jump) | mem[60] expected=0x60 got=0x0
+[ERROR] BEQ not taken (fall-through) | mem[61] expected=0x42 got=0x0
+[ERROR] BNE taken | mem[62] expected=0x77 got=0x0
+[ERROR] BLT taken | mem[63] expected=0x88 got=0x0
+
+========================================
+RESULTS: 4 passed, 24 failed
+========================================
+
+VCD trace: trace/tb_top.vcd
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"top_test" end time: Oct 28 23:41 EET
+"top_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 28 23:41 EET
